@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block titulo %} MarineBase {% endblock %} 
+
+{% block contenido %}
+
+
+<div class="bg-gray-900">
+  <div class="relative isolate overflow-hidden pt-14">
+    <img src="/static/marines.jpg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
+    <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+      <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
+    <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+      <div class="text-center">
+        <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Tu herramienta online para reportar piratas</h1>
+        <p class="mt-6 text-lg leading-8 text-gray-300">MarineBase es una organización dedicada a garantizar la seguridad y el bienestar de todos aquellos que navegan por nuestros vastos océanos.</p>
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+          <a href="/report" class="rounded-md bg-[#1144ae] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Reporta</a>
+          <a href="/piratas" class="text-sm font-semibold leading-6 text-white">Piratas reportados <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+      <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="bg-white py-32">
+    <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
+      <div class="mx-auto max-w-2xl">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Conoce a nuestros líderes</h2>
+        <p class="mt-4 text-lg leading-8 text-gray-600">Nos enorgullece ser los guardianes de la paz en los mares.</p>
+      </div>
+      <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <li>
+          <img class="mx-auto h-56 w-56 rounded-full" src="/static/kizaru.jpg" alt="">
+          <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Kizaru</h3>
+          <p class="text-sm leading-6 text-gray-600">Almirante</p>
+        </li>
+        <li>
+          <img class="mx-auto h-56 w-56 rounded-full" src="/static/akainu.jpg" alt="">
+          <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Akainu</h3>
+          <p class="text-sm leading-6 text-gray-600">Almirante</p>
+        </li>
+        <li>
+          <img class="mx-auto h-56 w-56 rounded-full" src="/static/aokiji.jpg" alt="">
+          <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Aokiji</h3>
+          <p class="text-sm leading-6 text-gray-600">Almirante</p>
+        </li>
+        <li>
+          <img class="mx-auto h-56 w-56 rounded-full" src="/static/garp.jpg" alt="">
+          <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Garp</h3>
+          <p class="text-sm leading-6 text-gray-600">Vice-Almirante</p>
+        </li>
+        <li>
+          <img class="mx-auto h-56 w-56 rounded-full" src="/static/tsuru.jpg" alt="">
+          <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Tsuru</h3>
+          <p class="text-sm leading-6 text-gray-600">Vice-Almirante</p>
+        </li>
+        <li>
+          <img class="mx-auto h-56 w-56 rounded-full" src="/static/smoker.jpg" alt="">
+          <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Smoker</h3>
+          <p class="text-sm leading-6 text-gray-600">Vice-Almirante</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <section class="bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <figure class="mx-auto max-w-2xl">
+      <p class="sr-only">5 out of 5 stars</p>
+      <div class="flex gap-x-1 text-[#1144ae]">
+        <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+        </svg>
+        <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+        </svg>
+        <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+        </svg>
+        <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+        </svg>
+        <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+        </svg>
+      </div>
+      <blockquote class="mt-10 text-xl font-semibold leading-8 tracking-tight text-gray-900 sm:text-2xl sm:leading-9">
+        <p>“Como embajador de Alabasta, mi experiencia con la Marina ha sido excepcional. Su dedicación a mantener la paz y la seguridad en los mares es verdaderamente loable. En varias ocasiones, la Marina ha respondido con prontitud y eficacia a las amenazas que podrían haber afectado negativamente a mi reino y a otros lugares.”</p>
+      </blockquote>
+      <figcaption class="mt-10 flex items-center gap-x-6">
+        <img class="h-12 w-12 rounded-full bg-gray-50" src="/static/crocodile.jpg" alt="">
+        <div class="text-sm leading-6">
+          <div class="font-semibold text-2xl text-gray-900">Crocodile</div>
+          <div class="mt-0.5 text-gray-600">Representante de Alabasta</div>
+        </div>
+      </figcaption>
+    </figure>
+  </section>
+  
+
+{% endblock %}
+
